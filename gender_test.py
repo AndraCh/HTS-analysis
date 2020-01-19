@@ -9,7 +9,6 @@ from math import floor, log10
 from statsmodels.sandbox.stats.multicomp import multipletests
 
 Connstr_icd = '' # constructor for SQL connection
-Cursor = '' # constructor for SQL connection
 TABLE = '' # SQL table
 TARGETS = '' # targets list
 

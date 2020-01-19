@@ -4,8 +4,6 @@ ICDs test
 
 Calculate the occurence of all ICD codes in negative and positive patient 
 samples. 
-Select the first description fro ICD description table as the ICD code 
-description. 
 This script is using high evel diagnoses codes (A40, A41, ..).
 """
 
@@ -13,11 +11,10 @@ import pyodbc
 import pandas as pd
 from math import floor, log10
 import scipy
-import numpy as np
 from statsmodels.sandbox.stats.multicomp import multipletests
 
 Connstr_icd = '' # constructor for SQL connection
-Cursor = '' # constructor for SQL connection
+Connstr = '' # constructor for SQL connection
 TABLE = '' # SQL table
 TARGETS = '' # targets list
 
