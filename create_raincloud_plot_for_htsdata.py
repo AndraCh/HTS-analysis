@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 colour_palette = 'plasma'
 
-Connstr_icd = ... # contructor for SQL connection
+Connstr_icd = ... # constructor for SQL connection
 PATH_SAVE_IMG = ... # path to save the final image
 TARGET = ... # target
 TABLE = ... # SQL table
