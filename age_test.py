@@ -9,9 +9,9 @@ import scipy
 import numpy as np
 from statsmodels.sandbox.stats.multicomp import multipletests
 
-Connstr_icd = ... # constructor for SQL connection
-TABLE = ... # SQL table
-TARGETS = ... # targets list
+Connstr_icd = '' # constructor for SQL connection
+TABLE = '' # SQL table
+TARGETS = '' # targets list
 
 def get_age_target (table, type_hits):
     db_query = "SELECT Age FROM "+ table + " WHERE hits = '" + type_hits + "'"

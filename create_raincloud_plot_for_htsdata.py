@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 
 colour_palette = 'plasma'
 
-Connstr_icd = ... # constructor for SQL connection
-PATH_SAVE_IMG = ... # path to save the final image
-TARGET = ... # target
-TABLE = ... # SQL table
+Connstr_icd = '' # constructor for SQL connection
+PATH_SAVE_IMG = '' # path to save the final image
+TARGET = '' # target
+TABLE = '' # SQL table
 # Source: https://github.com/pog87/PtitPrince/blob/master/RainCloud_Plot.ipynb
    
 def get_nmlogEC50_data(table, target):
