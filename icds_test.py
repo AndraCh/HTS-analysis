@@ -106,7 +106,6 @@ def calc_codes_significance (df_occ_pos, df_occ_neg, type_hits, table):
             #print ( hits_codes_names[ind], obs)
             chi2, p_chi, dof, expected = stats.chi2_contingency (obs)
             table = [[sum(pos_patients),sum(neg_patients)],[len(pos_patients)-sum(pos_patients),len(neg_patients)-sum(neg_patients)]]
-            oddsratio, p_chi = scipy.stats.fisher_exact(table, alternative='two-sided') 
             p_value_list.append (p_chi) #(float("%0.4f" % (p_chi)))  
             code_list.append ( hits_codes_names[ind])
             code_list_desc.append (hits_description[ind])
